@@ -7,7 +7,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
+           
+        .btn-shine {
+    display: inline-block;
+    position: relative;
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 26px;
+    text-decoration: none;
+    white-space: nowrap;
+  
+    font-family: "Poppins", sans-serif;
+}
+        @-moz-keyframes shine {
+            0% {
+                background-position: 0;
+            }
 
+            60% {
+                background-position: 180px;
+            }
+
+            100% {
+                background-position: 180px;
+            }
+        }
+
+        @-webkit-keyframes shine {
+            0% {
+                background-position: 0;
+            }
+
+            60% {
+                background-position: 180px;
+            }
+
+            100% {
+                background-position: 180px;
+            }
+        }
+
+        @-o-keyframes shine {
+            0% {
+                background-position: 0;
+            }
+
+            60% {
+                background-position: 180px;
+            }
+
+            100% {
+                background-position: 180px;
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                background-position: 0;
+            }
+
+            60% {
+                background-position: 180px;
+            }
+
+            100% {
+                background-position: 180px;
+            }
+        }
+        
             body{
                 height: 100%;
                 
@@ -15,8 +90,8 @@
             }
             .header{
                 text-align: center;
-                background-color: yellow;
-                text-decoration: underline;
+               
+                position: relative;
             }
             .wrapper{
                 background-color: black;
@@ -47,7 +122,7 @@
               
              
             }
-
+            
             h2{
                 text-align: center;
                 color: gold;
@@ -75,19 +150,14 @@
                 color: white;
                 text-align: center;
             }
-            tr:hover td:not(:hover){
+            td:first-child:hover ~ td:nth-child(2) {
                 box-shadow: 0 0  .9vw rgba(143, 99, 238, 0.952);
                 outline: none;
                 transform: scale(1.2);
                 
 
             }
-            td:nth-child(2){
-                /* text-align: center;
-                padding: 0;
-               padding-left: 65px; */
-              
-            }
+          
             td{
                 color: gold;
 
@@ -108,7 +178,7 @@
 
         <div class="wrapper">
             <div class="header">
-                <h1>Menu Card</h1>
+                <h1 class="btn-shine">Menu Card</h1>
             </div>
             <div class="menuClass">
 
